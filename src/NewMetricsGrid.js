@@ -1,4 +1,3 @@
-// NewMetricsGrid.js
 import React from 'react';
 import DownloadUploadCard from './DownloadUploadCard';
 import LatencyJitterPacketLossCard from './LatencyJitterPacketLossCard';
@@ -13,7 +12,7 @@ const NewMetricsGrid = () => {
             <div className="flex flex-col justify-between flex-grow">
                 <LatencyJitterPacketLossCard
                     title="Latency"
-                    value="66.6 ms"
+                    value="66.6"
                     details={[
                         { label: 'Download', value: '43.9 ms' },
                         { label: 'Upload', value: '40.7 ms' },
@@ -22,7 +21,7 @@ const NewMetricsGrid = () => {
                 <hr className="border-gray-700" />
                 <LatencyJitterPacketLossCard
                     title="Jitter"
-                    value="1.72 ms"
+                    value="1.72"
                     details={[
                         { label: 'Download', value: '10.8 ms' },
                         { label: 'Upload', value: '3.25 ms' },

@@ -1,6 +1,6 @@
 import React from 'react';
+const Metric = ({ size, min, max }) => {
 
-const Metric = ({ size, min, max, median, average }) => {
     return (
         <div className="mb-4">
             <div className="flex justify-between items-center text-white">
@@ -20,7 +20,10 @@ const Metric = ({ size, min, max, median, average }) => {
                 </div>
             </div>
             <div className="relative h-4 mt-2">
-                <div className="absolute top-0 left-0 h-6 bg-gradient-to-b from-green-300 to-green-500" style={{ width: '5%' }}></div>
+                <div className='tooltip-container'>
+                    <div className="absolute top-0 left-0 h-6 bg-gradient-to-b from-green-300 to-green-500" style={{ width: '5%' }}></div>
+                    <div className='tooltip-content'>Tooltip Content</div>
+                </div>
                 <div className="absolute top-0 left-1/4 h-4 bg-green-200 w-1"></div>
                 <div className="absolute top-0 left-2/4 h-4 bg-green-200 w-1"></div>
                 <div className="absolute top-0 left-3/4 h-4 bg-green-200 w-1"></div>
@@ -38,3 +41,4 @@ const Metric = ({ size, min, max, median, average }) => {
 };
 
 export default Metric;
+

@@ -1,9 +1,8 @@
-// DownloadUploadCard.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-const DownloadUploadCard = ({ title, value, gradientColor }) => {
+const DownloadUploadCard = ({ title, value="-/-", gradientColor }) => {
     const icon = title === "Download" ? faArrowDown : faArrowUp;
     
     return (
